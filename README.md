@@ -36,4 +36,15 @@ CMD [ "go", "run", "main.go" ]
 
 1. **RUN** executes at build time (creates image layers).
 2. **CMD** executes at runtime (when container starts).
+---
+# Day-3: 
+## WORKDIR - Deep Dive
+### What is WORKDIR?
+- **Purpose:** Sets the current working directory for any subsequent Docker instructions like `RUN`, `CMD`, `ENTRYPOINT`, `COPY`, and `ADD`.
+- **Execution:** If the specified directory does not exist, Docker automatically creates it.
+- **Syntax:**
+```dockerfile
+WORKDIR /app
+```
+---
 
