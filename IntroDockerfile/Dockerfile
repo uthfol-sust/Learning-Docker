@@ -8,3 +8,4 @@ RUN apt install -y golang
 
 COPY ./main.go ./main.go
 
+CMD [ "go", "run", "main.go" ]
