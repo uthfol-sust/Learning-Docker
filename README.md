@@ -47,4 +47,13 @@ CMD [ "go", "run", "main.go" ]
 WORKDIR /app
 ```
 ---
+# Day-4:
 
+### What is Detach Mode?
+- **Purpose:** Runs a Docker container in the background, allowing the terminal to be free for other tasks.
+- **Command:** Use `-d` flag with `docker run`.
+
+### Syntax:
+```bash
+docker run -d <image_name>
+```
